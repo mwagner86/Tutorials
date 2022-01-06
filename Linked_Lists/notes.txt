@@ -9,3 +9,12 @@ https://www.youtube.com/watch?v=928Xhm_jByo
 
 Part3:
 https://www.youtube.com/watch?v=dfiwycOwwO0
+
+structures:
+https://www.geeksforgeeks.org/structures-c/?ref=lbp
+typedef in structures:
+https://stackoverflow.com/questions/252780/why-should-we-typedef-a-struct-so-often-in-c
+https://www.learn-c.org/en/Structures
+
+List manipulation:
+https://stackoverflow.com/questions/326202/generic-list-manipulation-function-in-c
