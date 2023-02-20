@@ -7,11 +7,12 @@ int main (int argc, char *argv[])
 	i = 0;
 	if (argc == 2)
 	{
-		while(argv[1][i] != '\0')
+		str = argv[1];
+		while(str[i] != '\0')
 			i++;
 		while (i >= 1)
 		{
-			write(1, &argv[1][i - 1], 1);
+			write(1, &str[i - 1], 1);
 			i--;
 		}
 	}
