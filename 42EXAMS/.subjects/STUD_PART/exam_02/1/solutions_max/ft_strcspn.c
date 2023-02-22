@@ -40,3 +40,11 @@ int main(void)
 	printf("%s\n", numcode);
 	printf("%s\n", numcode2);
 }
+
+// int	main(void)
+// {
+// printf("%lu\n", ft_strcspn("test", "est"));
+// printf("%lu\n", strcspn("test", "est"));
+// printf("%lu\n", ft_strcspn("test", "f"));
+// printf("%lu\n", strcspn("test", "f"));
+// }
