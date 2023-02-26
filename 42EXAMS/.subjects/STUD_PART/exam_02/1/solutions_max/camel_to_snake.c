@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 				if(str[i] >= 'A' && str[i] <= 'Z')
 				{
 					write(1, "_", 1);
-					str[i] += 32;
+					str[i] = str[i] + 32;
 				}
 				write(1, &str[i], 1);
 				i++;

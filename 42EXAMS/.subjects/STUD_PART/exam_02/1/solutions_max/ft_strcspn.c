@@ -25,8 +25,8 @@ size_t ft_strcspn(const char *s, const char *reject)
 
 int main(void)
 {
-	char s[] = "ASDFGASDSADA412321312312";
-	char num[] = "0123456789";
+	char s[] = "ASDFGeerr49871312312312";
+	char num[] = "123";
 
 	int init = ft_strcspn(s, num);
 	int init2 = strcspn(s, num);

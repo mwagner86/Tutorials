@@ -24,6 +24,7 @@ int ft_atoi(const char *str)
 
 int main(int argc, char **argv)
 {
-    printf("ft_atoi(\"%s\") = %d\n", argv[1], ft_atoi(argv[1]));
-    return(0);
+	if(argc == 2)
+		printf("ft_atoi(\"%s\") = int %d\n", argv[1], ft_atoi(argv[1]));
+	return (0);
 }

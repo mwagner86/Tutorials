@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 		while(str[i] != '\0')
 			{
 				if(str[i] >= 'a' && str[i] <= 'z')
-					str[i] = 219 - str[i];
+					str[i] = ('a' + 'z') - str[i];
 				else if(str[i] >= 'A' && str[i] <= 'Z')
-					str[i] = 155 - str[i];
+					str[i] = ('A' + 'Z') - str[i];
 				write(1, &str[i], 1);
 				i++;
 			}
