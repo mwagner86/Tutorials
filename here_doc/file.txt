@@ -1,0 +1,14 @@
+cat <<'EOF' |  sed 's/l/e/g' > file.txt
+Hello
+World
+EOF
+
+sed is a stream editor. It can perform basic text manipulation on files and input streams such as pipelines. With sed, you can search, find and replace, insert, and delete words and lines. It supports basic and extended regular expressions that allow you to match complex patterns.
+
+cat << LIMITER | sed 's/i/o/g' >> file.txt
+My Name is Maximilian
+LIMITER
+
+< search.txt grep "lorem" | awk '{print $8}' > found.txt
+
+< search.txt grep "Lorem" | awk '{print $2}' | sed 's/i/u/g' > found.txt
