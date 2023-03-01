@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 char *ft_strdup(char *src)
 {
@@ -28,4 +29,5 @@ char *ft_strdup(char *src)
 int main(void)
 {
 	printf("%s\n", ft_strdup("This is a test!"));
+	printf("%s\n", strdup("This is a test!"));
 }

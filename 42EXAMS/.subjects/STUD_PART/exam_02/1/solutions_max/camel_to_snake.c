@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 		str = argv[1];
 		while(str[i] != '\0')
 			{
-				if(str[i] >= 'A' && str[i] <= 'Z')
+				if(str[i] >= 'A' && str[i] <= 'Z' )
 				{
 					write(1, "_", 1);
 					str[i] = str[i] + 32;

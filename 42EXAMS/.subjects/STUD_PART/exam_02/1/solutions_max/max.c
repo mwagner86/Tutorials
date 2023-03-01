@@ -3,17 +3,21 @@
 
 int	max(int* tab, unsigned int len)
 {
+	int i;
 	int res;
+	res = tab[0];
+	i = 0;
 
 	if (len == 0)
-		return (0);
-	res = tab[0];
-	for (unsigned int i = 0; i < len; i = i + 1)
+		return 0;
+	
+	while(tab[i] != '\0')
 	{
-		if (res < tab[i])
+		if (tab[i] > res)
 			res = tab[i];
+		i++;
 	}
-	return (res);
+	return(res);
 }
 
 int main(int argc, char **argv)
@@ -23,7 +27,7 @@ int main(int argc, char **argv)
     int *tab = malloc(sizeof(int) * (argc - 1));
     
     printf("max( {");
-    for (unsigned int i = 2; i < argc; i++)
+    for (int i = 2; i < argc; i++)
     {
         printf("%s", argv[i]);
         if (i != argc - 1)

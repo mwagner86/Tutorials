@@ -32,7 +32,7 @@ int main(void)
 	int init2 = strcspn(s, num);
 
 	printf("init: %d\n", init);
-	printf("init2: %d\n", init);
+	printf("init2: %d\n", init2);
 
 	char *numcode = s + init;
 	char *numcode2 = s + init2;
