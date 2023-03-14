@@ -13,8 +13,11 @@ int	main(int argc, char const *argv[])
 	if (argc == 3)
 	{
 		while (haystack[j] != '\0')
-			if (haystack[j++] == str[i])
+		{
+			if (haystack[j] == str[i])
 				i++;
+			j++;
+		}
 		if (str[i] == '\0')
 			while (str[k] != '\0')
 			{

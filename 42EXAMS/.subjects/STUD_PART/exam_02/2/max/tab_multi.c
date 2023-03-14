@@ -7,7 +7,7 @@ int	ft_atoi(char *str)
 
 	while (*str >= '0' && *str <= '9')
 	{
-		nbr = nbr * 10;
+		nbr *= 10;
 		nbr += *str - 48;
 		++str;
 	}
@@ -38,7 +38,7 @@ void	tab_multi(char *str)
 		write (1, " = ", 3);
 		ft_putnbr (i * nbr);
 		write (1, "\n", 1);
-		++i;
+		i++;
 	}
 }
 
