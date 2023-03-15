@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	{
 		s1 = argv[1];
 		s2 = argv[2];
-		while (s1[i] =! '\0')
+		while (s1[i] != '\0')
 		{	
 			k = 0;
 			while(s2[k] != '\0')
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 			i++;
 		}
 	}
-	write (1, '\n', 1);
+	write (1, "\n", 1);
 }
 
 
