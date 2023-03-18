@@ -7,7 +7,6 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 
 	if (a == 0 || b == 0)
 		return 0;
-	
 	if (a > b)
 		lcm = a;
 	else
@@ -17,9 +16,7 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 		if (lcm % a == 0 && lcm % b == 0)
 			return (lcm);
 		++lcm;
-
 	}
-
 }
 
 int		main(int argc, char **argv)
