@@ -31,10 +31,12 @@ int ft_atoi(const char *str)
 int main(int argc, char **argv)
 {
 	char *str;
-	if(argc == 2)
+	if (argc == 2)
+	{
 		str = argv[1]; 
 		printf("ft_atoi(%s) = int %d\n", argv[1], ft_atoi(str));
 		printf("atoi(%s) = int %d\n", argv[1], atoi(str));
+	}
 	if (argc != 2)
 		printf("\n");
 	return (0);
