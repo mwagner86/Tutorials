@@ -1,24 +1,36 @@
 #include <stdio.h>
 #include <string.h>
 
-char *ft_strpbrk(const char *s1, const char *s2)
+char *ft_strpbrk(const char *s, const char *accept)
 {
 	int i = 0;
 	
-	if (!s1 || !s2)
+	if (!s || !accept)
 	{
 		return (0);
 	}
-	while(*s1)
+	while(*s)
 	{
 		i = 0;
-	   	while(s2[i])
+	   	while(accept[i])
 		{
-			if(*s1 == s2[i])
-				return (char *) s1;
+			if(*s == accept[i])
+				return (char *) s;
 			i++;
 		}
-		s1++;	
+		s++;	
 	}
 	return (0);
+}
+
+int main(void)
+{
+	char s1[] = "hierstehttext";
+	char s2[] = "";
+
+	char *init = ft_strpbrk(s1, s2);
+	char *init2 = strpbrk(s1, s2);
+
+	printf("init: %s\n", init);
+	printf("init2: %s\n", init2);
 }

@@ -1,15 +1,29 @@
-char *ft_strrev(char *str)
-{
-	int i = -1;
-	int length = 0;
-	char temporary = str[i];
+#include <stdio.h>
 
-	while (str[length])
-		length++;
-	while (++i < --length)
+char	*ft_strrev(char *str)
+{
+	int	len = 0;
+	int	i = 0;
+	char	tmp;
+
+	while (str[len] != '\0')
+		len++;
+	len = len - 1;
+	while (i < len)
 	{
-		str[i] = str[length];
-		str[length] = temporary;
+		tmp = str[i];
+		str[i] = str[len];
+		str[len] = tmp;
+		i++;
+		len--;
 	}
 	return (str);
+}
+
+int	main(void)
+{
+	char s[] = "Hello World";
+	ft_strrev(s);
+	printf("%s\n", s);
+	return (0);
 }
