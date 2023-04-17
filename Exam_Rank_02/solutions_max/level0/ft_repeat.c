@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
 		{
 			k = 1;
 			if (str[i] >= 'A' && str[i] <= 'Z')
-				k = str[i] - 64;
+				k = str[i] - 'A' + 1;
 			if (str[i] >= 'a' && str[i] <= 'z')
-				k = str[i] - 96;
+				k = str[i] - 'a' + 1;
 			while (k >= 1)
 			{
 				write(1, &str[i], 1);
