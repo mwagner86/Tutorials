@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int	ft_putnbr (int n)
+void	ft_putnbr (int n)
 {
 	char digit;
 

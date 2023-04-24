@@ -3,7 +3,7 @@
 int check  (int c, char *str, int index)
 {
 	int i = 0;
-	while (i < index || index == -1)
+	while (str[i] && (i < index || index == -1))
 	{
 		if (str[i] == c)
 			return (0);

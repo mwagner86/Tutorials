@@ -28,12 +28,12 @@ int ft_isprime(int nbr)
 	i = 2;
 
 	while (i < nbr)
-		{
-			if (nbr % i == 0)
-				return (0);
-			++i;
-		}
-		return (1);
+	{
+		if (nbr % i == 0)
+			return (0);
+		++i;
+	}
+	return (1);
 }
 
 int add_prime_sum(int nbr)

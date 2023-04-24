@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
 			if ((str[i] >= 'a' && str[i] <= 'm') || (str[i] >= 'A') && (str[i] <= 'M'))
 				str[i] = str[i] + 13;
 
-			else if ((str[i] >= 'n' && str[i] <= 'z') || (str[i] >= 'N' && str[i] <= 'Z'))
+			else if ((str[i] >= 'n' && str[i] <= 'z') || (str[i] >= 'N' && str[i] <= 'Z')) // ELSE IF IMPORTANT
 				str[i] = str[i] - 13;
 
 			write(1, &str[i], 1);

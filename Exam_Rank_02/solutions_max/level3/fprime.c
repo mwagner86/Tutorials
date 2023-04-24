@@ -8,7 +8,7 @@ int	is_prime(int n)
 	{
 		if(n % i == 0)
 			return (0);
-		++i;
+		i++;
 	}
 	return (1);
 }

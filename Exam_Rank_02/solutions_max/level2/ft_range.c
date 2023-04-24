@@ -25,29 +25,16 @@ int *ft_range(int start, int end)
 	return (temp);
 }
 
-int		absolute_value(int n)
+int main(int argc, char **argv)
 {
-	if (n < 0)
-		return (-n);
-	return (n);
-}
+	(void)argc;
+	int	arr_len;
+	int	*arr;
 
-int		main(int argc, char **argv)
-{
-	int start = atoi(argv[1]);
-	int end = atoi(argv[2]);
-
-	int *arr = ft_range(start, end);
-
-	int i = 0;
-	if (argc != 3)
-		return 0;
-	while (i < 1 + absolute_value(end - start))
-	{
-		printf("%d", arr[i]);
-        if (i < 1 + absolute_value(end - start) - 1)
-            printf(", ");
-		++i;
-	}
-	printf("\n");
+	arr_len = abs(atoi(argv[2]) - atoi(argv[1]));
+	arr = ft_range(atoi(argv[1]), atoi(argv[2]));
+	for (int i = 0; i <= arr_len; i += 1)
+		printf("%d\n", arr[i]);
+	free(arr);
+	return (EXIT_SUCCESS);
 }
