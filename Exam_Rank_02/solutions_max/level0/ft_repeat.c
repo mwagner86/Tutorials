@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 		str = argv[1];
 		while (str[i] != '\0')
 		{
-			k = 1;
+			k = 1; // set to 1 to write chars that arent letters
 			if (str[i] >= 'A' && str[i] <= 'Z')
 				k = str[i] - 'A' + 1;
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (str[i] >= 'a' && str[i] <= 'z') // no else to go into while loop if aren't letters
 				k = str[i] - 'a' + 1;
 			while (k >= 1)
 			{

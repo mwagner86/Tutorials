@@ -3,7 +3,7 @@
 
 int	max(int* tab, unsigned int len)
 {
-	int i;
+	unsigned int i;
 	int res;
 	res = tab[0];
 	i = 0;
@@ -11,7 +11,7 @@ int	max(int* tab, unsigned int len)
 	if (len == 0)
 		return 0;
 	
-	while(tab[i] != '\0')
+	while(i < len) // careful here, not '\0', since 0 will mess it up 
 	{
 		if (tab[i] > res)
 			res = tab[i];

@@ -35,7 +35,7 @@ int	main(int argc, char *argv[])
 			j++;
 		}
 		i--;
-		while (k < i)
+		while (k <= i)
 		{
 			if (check(s1[k], s1, k) == 1)
 				write(1, &s1[k], 1);

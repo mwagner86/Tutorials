@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			j++;
 		}
 		i--; // 0 byte
-		while (k < i)
+		while (k <= i)
 		{
 			if(check(s1[k], s1, k) == 1) // checks for doubles, skips them
 				write(1, &s1[k], 1);
