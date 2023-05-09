@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int ft_atoi(const char *str)
+int ft_atoi(const char *str) // const char -> man atoi
 {
 	int nbr;
 	int flag;

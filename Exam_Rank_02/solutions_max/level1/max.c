@@ -8,7 +8,7 @@ int	max(int* tab, unsigned int len)
 	res = tab[0];
 	i = 0;
 
-	if (len == 0)
+	if (len == 0 || tab == NULL)
 		return 0;
 	
 	while(i < len) // careful here, not '\0', since 0 will mess it up 
