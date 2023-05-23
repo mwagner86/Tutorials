@@ -58,7 +58,7 @@ int	ft_assign(const char *str, int i, va_list args)
 		len = ft_putstr(va_arg(args, char *));
 	else if (str[i] == 'd')
 		len = ft_putnbr(va_arg(args, int));
-	if (str[i] == 'x')
+	else if (str[i] == 'x')
 		len = ft_puthexnbr(va_arg(args, unsigned int), "0123456789abcdef");
 	return (len);
 }
