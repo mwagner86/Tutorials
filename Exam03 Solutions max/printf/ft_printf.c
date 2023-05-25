@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
+#include <stdio.h>
 
 int	ft_putchar(char c)
 {
@@ -85,13 +86,23 @@ int	ft_printf(const char *str, ...)
 	return (len);
 }
 
-int main (void)
+int main(void)
 {
-	int nbr = INT_MAX;
-	int nbr1 = INT_MIN;
-	ft_printf("%s\n", "toto");
-	ft_printf("Magic %s is %d\n", "number", 42);
-	ft_printf("Hexadecimal for %d is %x\n", 42, 42);
-	ft_printf("%d is %x\n", nbr, nbr);
-	ft_printf("%d is %x\n", nbr1, nbr1);
+	int	r;
+
+	r = 0;
+	ft_printf("\n--Mixed ft_printf ---\n");
+	ft_printf("%d%x%d%x%d%x%d%x\n", 0, 0, 42, 42, 2147483647, 2147483647, (int)-2147483648, (int)-2147483648);
+	ft_printf("-%d-%x-%d-%x-%d-%x-%d-%x-\n", 0, 0, 42, 42, 2147483647, 2147483647, (int)-2147483648, (int)-2147483648);
+	ft_printf("\n");
+	ft_printf("%s%s%s%s\n", "", "toto", "wiurwuyrhwrywuier", NULL);
+	ft_printf("-%s-%s-%s-%s-\n", "", "toto", "wiurwuyrhwrywuier", NULL);
+	ft_printf("written: %d\n", r);
+	printf("\n--Mixed printf ---\n");
+	printf("%d%x%d%x%d%x%d%x\n", 0, 0, 42, 42, 2147483647, 2147483647, (int)-2147483648, (int)-2147483648);
+	printf("-%d-%x-%d-%x-%d-%x-%d-%x-\n", 0, 0, 42, 42, 2147483647, 2147483647, (int)-2147483648, (int)-2147483648);
+	printf("\n");
+	printf("%s%s%s%s\n", "", "toto", "wiurwuyrhwrywuier", NULL);
+	printf("-%s-%s-%s-%s-\n", "", "toto", "wiurwuyrhwrywuier", NULL);
+	printf("written: %d\n", r);
 }
